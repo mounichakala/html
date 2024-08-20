@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .a{
+            display: grid;
+            grid-template-columns:200px 1fr;
+          
+           
+        }
+        .a aside{
+            display: flex;
+            flex-direction:column;
+            box-shadow: 2px 2px 3px ;
+            height: 85vh;
+            background-color: cadetblue;
+
+             & a{
+                text-decoration: none;
+                margin-bottom: 20px;
+                text-align: center;
+               
+                
+             }
+             & img{
+            width: 75%;
+            margin-bottom: 20px;
+             }
+
+        }
+        .a section{
+            padding-left:92px;
+            background-color: aqua;
+            & h1{
+                text-align: center;
+
+            }
+        }
+         .b {
+            
+           display: flex; 
+           flex-direction: row;
+           justify-content: space-between;
+           background-color: darkorchid;
+          
+           & nav a{
+            text-decoration: none;
+            padding: 4px;
+            margin: 13px;
+            display: inline-block;
+            color: aliceblue;
+         
+           }
+            
+         }
+         .a footer p{
+            margin-top: 489px;
+            text-align: center;
+            background-color: beige;
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="b">
+
+        <a href=""><img src="img/a1.png" style="width: 100px;" alt=""></a> 
+      
+        <nav>
+            <a href="">HOME</a>
+            <a href="">SERVICES</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+        </nav>
+    </div>
+     <div class="a">
+        <aside>
+            <img src="img/a1.png"  alt="">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">EDUCATION</a>
+            <a href="">EXPERIENCE</a>
+            <a href="">CERTIFICATION</a>
+            <a href="">HOBBIES</a>
+            <a href="">CONTACT</a>
+        </aside>
+        <section>
+            <h1>THIS IS MOUNI</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minus beatae voluptates excepturi molestias deleniti maiores quas, numquam, veniam sint quae nihil facere vero. Obcaecati magni vel necessitatibus unde reprehenderit?
+           Reiciendis laboriosam itaque non autem soluta minima hic architecto nam! Et aperiam dolorum quaerat, libero recusandae labore impedit cupiditate blanditiis magni consequuntur nemo voluptates, nobis quibusdam doloremque totam aliquid fuga.
+           Suscipit ab similique quia vero ipsa cumque ratione quisquam. Laudantium asperiores quod minima ex odit aliquam quis quibusdam enim fugiat consectetur possimus porro, ullam sed et error, adipisci, eaque voluptatibus?
+           In minus maiores unde recusandae ipsa amet itaque porro provident, debitis ratione esse incidunt vitae at asperiores quos omnis nisi. Quas est amet laboriosam eligendi blanditiis labore vitae esse at!
+           Totam sit praesen
+           <footer>
+            <p>&copy; copy wright design</p>
+           </footer>
+      </div>
+ 
+   
