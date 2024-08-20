@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0px;
+    }
+    div{
+      background-color: palevioletred;
+      border:solid 7px black;
+      width: 50%;
+      margin: auto;
+    }
+    marquee{
+      background-color: yellow;
+
+      border: solid 3px brown;
+      margin: 14px;
+      padding: 10px;
+    }
+    h1{
+      text-align: center;
+      color:rgb(25, 0, 255);
+
+    }
+    p{
+      padding: 55px;
+      color:rgb(76, 0, 255);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <marquee behavior="alternate" direction="">⬅️MORNING NEWS</marquee>
+    <h1>NEWS369</h1>
+    <p>Lorem ipsum dolor sit amet consec dicta. Amet repellendus laborum quaerat voluptatum non facilis, rerum fugiat delectus. Itaque ut laborum eaque aspernatur maxime vel sapiente corporis veniam quia voluptates?
+    Accusamus, aut. Magnam delectus distinctio doloribus! Quos fuga ipsam iste, voluptatem rem quod recusandae temporibus labore nobis nam, necessitatibus architecto eius pariatur dolorem corporis ex esse ipsum. Maiores, placeat voluptas?
+    Vel tempora, ducimus aperiam optio minima veniam architecto sit quas labore laboriosam! Vitae exercitationem totam voluptas aliquid eligendi, perspiciatis non optio esse ullam assumenda expedita eos eius. Obcaecati, exercitationem accusantium?
+    Nulla repellat expliuscipit cum quas obcaecati delectus vel accusamus, dignissimos sapiente sed quisquam explicabo culpa dicta tenetur a laudantium, officia magnam optio nesciunt eaque porro assumenda! Harum, omnis?
+    Ex a et eum sequi assumenda rerum animi, iusto officiis corrupti quaerat, unde maiores aliquam quia magni minus delectus deserunt aperiam accusantium ducimus ut repellendus sed doloribus. Aliquam, nulla tenetur.</p>
+   <marquee behavior="alternate" direction="right">➡️EVENING NEWS</marquee>
+ 
+  </div>
+
+</body>
+</html>
