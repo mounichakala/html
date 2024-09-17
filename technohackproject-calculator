@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="h.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <marquee behavior="alternate" scrollamount="15"  direction="left">Calculator</marquee>
+    <div class="row">
+       <div id="r1">
+        <input type="text" id="calc-input" readonly>
+       </div>
+       <div id="r2" class="r">
+         <button class="button">C</button>
+         <button class="button">%</button>
+         <button class="button">(</button>
+         <button class="button">)</button>
+       </div>
+       <div id="r3" class="r">
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button">*</button>
+      </div>
+      <div id="r4" class="r">
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button">-</button>
+      </div>
+      <div id="r5" class="r">
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">+</button>
+      </div>
+       <div id="r6" class="r">
+         <button class="button">0</button>
+         <button class="button">.</button>
+         <button class="button">=</button>
+         <button class="button">/</button>
+       </div>
+    </div>
+    <script src="h.js"></script>
+</body>
+</html>
+
+css------
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    padding: 5px;
+    text-align: center;
+}
+
+.r button {
+    padding: 13px;
+    color: white;
+    font-weight:bolder;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+    background-color:rgb(5, 5, 4);
+}
+.r button:hover{
+    background-color: plum;
+    color: brown;
+    border: solid crimson 2px;
+}
+#r1 input {
+    border-radius: 3px;
+    font-size: 25px;
+    width: 75%;
+    color:white;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    background-color:black;
+}
+
+marquee {
+    text-align: center;
+    color: rgb(243, 243, 245);
+    font-weight: bolder;
+    font-size: 25px;
+  
+    background-color: blueviolet;
+    width: 19%;
+    margin-left: 41.5%;
+    border-radius:9px;
+    border: solid black 2px;
+}
+.row{
+    background-color:blueviolet;
+    width: 18%;
+    border: 3px solid black;
+    margin-left: 42%;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px palevioletred;
+    height: 55vh
+
+}
+js------------------------
+let string = "";
+let buttons = document.querySelectorAll('.button');
+let inputField = document.getElementById('calc-input');
+
+Array.from(buttons).forEach((button) => {
+    button.addEventListener('click', (e) => {
+        const value = e.target.innerHTML;
+
+        if (value === '=') {
+            try {
+                string = eval(string); 
+                inputField.value = string;
+            } catch (error) {
+                inputField.value = "Error"; 
+            }
+        } else if (value === 'C') {
+            string = "";
+            inputField.value = string;
+        } else {
+            string += value;
+            inputField.value = string;
+        }
+    });
+});
