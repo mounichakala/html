@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="m">
+        <form action="">
+        <h1>Login</h1>
+        <div class="a">
+            <input type="text" placeholder="Username" required>
+            <i class='bx bxs-user-circle' ></i>
+        </div>
+        <div class="a">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+       <div class="l">
+        <label for=""><input type="checkbox" name="" id="">Remember me </label>
+        <a href="#">forgot Password?</a>
+       </div>
+       <div class="k">
+        <button>Login</button>
+       </div>
+       <div class="o">
+         <p>Dont have an account? <a href="#">Register</a></p>
+       </div>
+    </form>
+    </div>
+    
+    
+</body>
+</html>
+css------
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+color: white;
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('img/l1.jpg') no-repeat center center;
+background-size: cover;
+
+}
+.m{
+    width: 27%;
+    background-color: rgb(31, 142, 142);
+    padding: 13px;
+    height: 78%;
+    text-align: center;
+    background-color:transparent;
+    border:2px solid rgb(16, 21, 25);
+    
+}
+
+.a ,.k, .o,.l{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    
+  }
+  .a input{
+    
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 17px;
+    background-color: transparent;
+    width: 75%;
+    color:white;
+    font-weight: 900;
+  }
+  .a input::placeholder {
+    color: #fff;
+    opacity: 1;   
+}
+
+
+.l a,.o a{
+    text-decoration: none;
+    color:white;
+    margin-left: 25%;
+}
+
+.l a:hover, .o a:hover {
+    text-decoration: underline;
+    color: white;  
+  }
+
+
+.k button{
+    font-size: 16px;
+    padding: 5px;
+    width: 68%;
+    border-radius: 177px;
+}
